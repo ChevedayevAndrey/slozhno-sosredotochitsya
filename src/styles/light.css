@@ -1,0 +1,23 @@
+/*
+  Специально для светлой темы при наличии класса.
+  Здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
+.page.theme_light {
+  --main-font-size: 18px;
+  --main-font-family: 'IBM Plex mono', monospace;
+  --color-highlights: #ff8dcb;
+  --color-shadow-light: #ff0070;
+  --color-text: #353430;
+  --medium-interval: 20px;
+  --small-interval: 10px;
+  --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --color-titles: #ffc2e6;
+  --color-content: #353430;
+  --color-background: #fff1f7;
+  --color-section-title: #353430;
+  --text-line-height: 1.3em;
+  --text-shadow: 4px 4px 0 var(--color-shadow-title);
+  --background-image: url(../images/cover-image-light.png);
+}
