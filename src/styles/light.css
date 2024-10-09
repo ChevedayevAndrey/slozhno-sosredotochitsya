@@ -1,23 +1,86 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_light {
-  --main-font-size: 18px;
-  --main-font-family: 'IBM Plex mono', monospace;
-  --color-highlights: #ff8dcb;
-  --color-shadow-light: #ff0070;
-  --color-text: #353430;
-  --medium-interval: 20px;
-  --small-interval: 10px;
-  --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --color-titles: #ffc2e6;
-  --color-content: #353430;
-  --color-background: #fff1f7;
-  --color-section-title: #353430;
-  --text-line-height: 1.3em;
-  --text-shadow: 4px 4px 0 var(--color-shadow-title);
-  --background-image: url(../images/cover-image-light.png);
+
+  --accent-color: #ff8dcb;
+  --decoration-color: #353430;
+  --background-color: #fff1f7;
+  --text-color:  #353430;
+  --main-heading-color:#353430;
+  --nav-color: #353430;
+  --section-title-color: #353430;
+  --header-title-color: #ffc2e6;
+  --footer-title-color: #ffc2e6;
+  background-image: url(../images/cover-image-light.png);
+}
+
+.theme_light .header__decoration {
+  display: none;
+}
+
+.theme_light .header__theme-menu-button_active {
+  outline: 1px solid var(--nav-color);
+}
+.theme_light .header__theme-menu-button:hover {
+  --nav-hover-color: rgba(50, 49, 45, .4);
+}
+
+@media (width <= 1024px) {
+  .theme_light .header__title {
+    --header-text-shadow: 4px 4px 0px #ff8dcb;
+  }
+
+  .theme_light .footer__title {
+    --footer-text-shadow: 2px 2px 0px #ff8dcb;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: #ff8dcb;
+    --decoration-color: #353430;
+    --background-color: #fff1f7;
+    --text-color:  #353430;
+    --main-heading-color:#353430;
+    --nav-color: #353430;
+    --section-title-color: #353430;
+    --header-title-color: #ffc2e6;
+    --footer-title-color: #ffc2e6;
+  }
+
+  .header__decoration {
+    display: none;
+  }
+
+  .page {
+    background-image: url(../images/cover-image-light.png);
+  }
+
+  .header__theme-menu-button_active {
+    outline: 1px solid var(--nav-color);
+  }
+
+  .header__theme-menu-button:hover {
+    --nav-hover-color: rgba(50, 49, 45);
+  }
+
+  .theme_dark .header__theme-menu-button:hover {
+    --nav-hover-color: rgba(255, 0, 112);
+  }
+
+  @media (width < 1024px) {
+    .header__title {
+      --header-text-shadow: 4px 4px 0px #ff8dcb;
+    }
+
+    .footer__title {
+      --footer-text-shadow: 2px 2px 0px #ff8dcb;
+    }
+
+    .theme_dark .header__title {
+      --header-text-shadow: 4px 4px 0px #ff0070;
+    }
+
+    .theme_dark .footer__title {
+      --footer-text-shadow: 2px 2px 0px #ff0070;
+    }
+  }
 }
