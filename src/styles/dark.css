@@ -9,5 +9,19 @@
   --section-title-color: #ff0070;
   --header-title-color: #db00ff;
   --footer-title-color: #db00ff;
-  background-image: url(../images/cover-image-dark.png);
+  --background-image: url(../images/cover-image-dark.png);
+  --nav-hover-color: rgb(255 0 112);
+  --footer-text-shadow: 2px 2px 0 #ff0070;
+  --header-text-shadow: 4px 4px 0 #ff0070;
+  --nav-hover-color: rgb(255 0 112);
 }
+
+.theme_dark .header__decoration {
+  display: block;
+}
+
+.theme_dark .header__theme-menu-button_active {
+  outline: 1px solid var(--nav-color);
+}
+
+
