@@ -10,6 +10,7 @@
   align-items: center;
   font-size: var(--font-size);
   block-size: 100vh;
+  min-height: 768px;
 }
 
 .decorated-zone::before,
@@ -217,13 +218,7 @@
 }
 
 @media (width >= 768px) {
-  .decorated-zone::before,
-  .decorated-zone::after {
-    content: "";
-    position: absolute;
-    inline-size: 25px;
-    block-size: 25px;
-  }
+  
 
   .decorated-zone::before {
     border-inline-end: 1px solid var(--decoration-color);
