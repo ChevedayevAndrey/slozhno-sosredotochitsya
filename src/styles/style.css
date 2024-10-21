@@ -100,8 +100,7 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--nav-hover-color);
-  opacity: 0.4;
+  outline: 1px solid rgba(100% 0% 44% / 0.4);
 }
 
 .header__title {
