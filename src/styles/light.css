@@ -5,6 +5,7 @@
   --text-color: #353430;
   --main-heading-color: #353430;
   --nav-color: #353430;
+  --nav-color-hover: rgb(50 49 45 / 0.4);
   --section-title-color: #353430;
   --header-title-color: #ffc2e6;
   --footer-title-color: #ffc2e6;
@@ -19,10 +20,6 @@
   outline: 1px solid var(--nav-color);
 }
 
-.theme_light .header__theme-menu-button:hover {
-  --nav-hover-color: rgb(50 49 45 / 0.4);
-}
-
 
 
 @media (prefers-color-scheme: light) {
@@ -34,6 +31,7 @@
     --text-color: #353430;
     --main-heading-color: #353430;
     --nav-color: #353430;
+    --nav-color-hover: rgb(50 49 45 / 0.4);
     --section-title-color: #353430;
     --header-title-color: #ffc2e6;
     --footer-title-color: #ffc2e6;
